@@ -25,4 +25,5 @@ RUN set -x \
 
 WORKDIR "${ACCUMULO_HOME}"
 COPY ./fs /
+EXPOSE 9997
 ENTRYPOINT [ "/sbin/entrypoint.sh" ]

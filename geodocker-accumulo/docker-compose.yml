@@ -51,6 +51,8 @@ services:
         environment:
           HADOOP_MASTER_ADDRESS: hdfs-name
           ZOOKEEPERS: zookeeper
+        ports:
+          - 9997:9997
         depends_on:
           - zookeeper
           - accumulo-master

@@ -8,6 +8,8 @@ build: dockerfile
                 --build-arg GEOMESA_VERSION=${GEOMESA_VERSION} \
                 --build-arg TAG=${TAG} \
                 --build-arg ACCUMULO_VERSION=${ACCUMULO_VERSION} \
+                --build-arg HADOOP_VERSION=${HADOOP_VERSION} \
+                --build-arg BIGTOP_VERSION=${BIGTOP_VERSION} \
 		-f target/Dockerfile \
                 -t ${IMG}:${TAG}	.
 
